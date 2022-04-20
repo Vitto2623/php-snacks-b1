@@ -15,9 +15,12 @@
         <?php
             $paragrafo = 'Nel pattinaggio artistico su ghiaccio. Nome di alcuni esercizi facenti parte delle 17 figure obbligatorie di scuola, che vengono eseguiti prima su uno e poi sull\'altro piede. Descrivendo un tracciato simile a due cerchi giustapposti.';
             echo $paragrafo;
-            $paragrafoDiviso = explode('.', $paragrafo, $limit = 3 );
-            echo var_dump($paragrafoDiviso);
-        ?>
+            $paragrafoDiviso = explode('.', $paragrafo, $limit = 3 );?>
+            <h1>Paragrafo suddiviso</h1>
+            <?php for ($i = 0; $i < count($paragrafoDiviso); $i++ ){?>
+                <li><?php echo $paragrafoDiviso[$i] ?></li>
+            <?php } ?>
+
     </div>
 </body>
 </html>
